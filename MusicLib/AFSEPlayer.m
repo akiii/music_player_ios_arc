@@ -6,18 +6,18 @@
 //
 //
 
-#import "BGSEPlayer.h"
+#import "AFSEPlayer.h"
 
-static BGSEPlayer *shared = nil;
+static AFSEPlayer *shared = nil;
 
-@interface BGSEPlayer()
+@interface AFSEPlayer()
 @property (nonatomic, strong) NSMutableDictionary *seDic;
 @end
 
-@implementation BGSEPlayer
+@implementation AFSEPlayer
 @synthesize seDic;
 
-+ (BGSEPlayer *)sharedObject{
++ (AFSEPlayer *)sharedObject{
     if (!shared) {
         shared = [[self alloc] init];
     }

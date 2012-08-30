@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-#define PLAY_BGM(filename)  [[BGBGMPlayer sharedObject] playWithFileName:filename]
-#define STOP_BGM            [[BGBGMPlayer sharedObject] stop]
+#define PLAY_BGM(filename)  [[AFBGMPlayer sharedObject] playWithFileName:filename]
+#define STOP_BGM            [[AFBGMPlayer sharedObject] stop]
 
-@interface BGBGMPlayer : NSObject
-+ (BGBGMPlayer *)sharedObject;
+@interface AFBGMPlayer : NSObject
++ (AFBGMPlayer *)sharedObject;
 - (void)playWithFileName:(NSString *)fileName;
 - (void)stop;
 @end

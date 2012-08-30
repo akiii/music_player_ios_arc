@@ -6,18 +6,18 @@
 //
 //
 
-#import "BGBGMPlayer.h"
+#import "AFBGMPlayer.h"
 
-static BGBGMPlayer *shared = nil;
+static AFBGMPlayer *shared = nil;
 
-@interface BGBGMPlayer()
+@interface AFBGMPlayer()
 @property (nonatomic, strong) AVAudioPlayer *bgm;
 @end
 
-@implementation BGBGMPlayer
+@implementation AFBGMPlayer
 @synthesize bgm;
 
-+ (BGBGMPlayer *)sharedObject{
++ (AFBGMPlayer *)sharedObject{
     if (!shared) {
         shared = [[self alloc] init];
     }

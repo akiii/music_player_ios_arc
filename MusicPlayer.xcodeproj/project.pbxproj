@@ -21,8 +21,8 @@
 		B8A10FFC15EE639A005D1063 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A10FE115EE6399005D1063 /* CoreData.framework */; };
 		B8A1100415EE639A005D1063 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8A1100215EE639A005D1063 /* InfoPlist.strings */; };
 		B8A1100715EE639A005D1063 /* MusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A1100615EE639A005D1063 /* MusicPlayerTests.m */; };
-		B8A1101915EE65C6005D1063 /* BGBGMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A1101615EE65C6005D1063 /* BGBGMPlayer.m */; };
-		B8A1101A15EE65C6005D1063 /* BGSEPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A1101815EE65C6005D1063 /* BGSEPlayer.m */; };
+		B8A1101915EE65C6005D1063 /* AFBGMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A1101615EE65C6005D1063 /* AFBGMPlayer.m */; };
+		B8A1101A15EE65C6005D1063 /* AFSEPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A1101815EE65C6005D1063 /* AFSEPlayer.m */; };
 		B8A1101D15EE6642005D1063 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A1101C15EE6642005D1063 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,11 +55,12 @@
 		B8A1100315EE639A005D1063 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8A1100515EE639A005D1063 /* MusicPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayerTests.h; sourceTree = "<group>"; };
 		B8A1100615EE639A005D1063 /* MusicPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerTests.m; sourceTree = "<group>"; };
-		B8A1101515EE65C6005D1063 /* BGBGMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBGMPlayer.h; sourceTree = "<group>"; };
-		B8A1101615EE65C6005D1063 /* BGBGMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBGMPlayer.m; sourceTree = "<group>"; };
-		B8A1101715EE65C6005D1063 /* BGSEPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSEPlayer.h; sourceTree = "<group>"; };
-		B8A1101815EE65C6005D1063 /* BGSEPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGSEPlayer.m; sourceTree = "<group>"; };
+		B8A1101515EE65C6005D1063 /* AFBGMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFBGMPlayer.h; sourceTree = "<group>"; };
+		B8A1101615EE65C6005D1063 /* AFBGMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFBGMPlayer.m; sourceTree = "<group>"; };
+		B8A1101715EE65C6005D1063 /* AFSEPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSEPlayer.h; sourceTree = "<group>"; };
+		B8A1101815EE65C6005D1063 /* AFSEPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSEPlayer.m; sourceTree = "<group>"; };
 		B8A1101C15EE6642005D1063 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B8A1101E15EEEB0E005D1063 /* AFMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFMusicPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,10 +167,11 @@
 		B8A1101415EE65C6005D1063 /* MusicLib */ = {
 			isa = PBXGroup;
 			children = (
-				B8A1101515EE65C6005D1063 /* BGBGMPlayer.h */,
-				B8A1101615EE65C6005D1063 /* BGBGMPlayer.m */,
-				B8A1101715EE65C6005D1063 /* BGSEPlayer.h */,
-				B8A1101815EE65C6005D1063 /* BGSEPlayer.m */,
+				B8A1101515EE65C6005D1063 /* AFBGMPlayer.h */,
+				B8A1101615EE65C6005D1063 /* AFBGMPlayer.m */,
+				B8A1101715EE65C6005D1063 /* AFSEPlayer.h */,
+				B8A1101815EE65C6005D1063 /* AFSEPlayer.m */,
+				B8A1101E15EEEB0E005D1063 /* AFMusicPlayer.h */,
 			);
 			path = MusicLib;
 			sourceTree = "<group>";
@@ -283,8 +285,8 @@
 				B8A10FEA15EE6399005D1063 /* main.m in Sources */,
 				B8A10FEE15EE6399005D1063 /* AppDelegate.m in Sources */,
 				B8A10FF115EE6399005D1063 /* MusicPlayer.xcdatamodeld in Sources */,
-				B8A1101915EE65C6005D1063 /* BGBGMPlayer.m in Sources */,
-				B8A1101A15EE65C6005D1063 /* BGSEPlayer.m in Sources */,
+				B8A1101915EE65C6005D1063 /* AFBGMPlayer.m in Sources */,
+				B8A1101A15EE65C6005D1063 /* AFSEPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
